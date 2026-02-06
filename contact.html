@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Daniel Gathandi - Software Engineering student and DJ">
+    <meta name="author" content="Daniel Gathandi">
+    <title>Contact Me | Daniel Gathandi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">DJ DANIE 254</a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="childhood.html" class="nav-link">Childhood</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="future.html" class="nav-link">Future</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <span class="badge">Let's Talk</span>
+                <h1>Get in <span class="text-gradient">Touch</span></h1>
+                <p class="page-subtitle">Have a question, opportunity, or just want to say hi? Reach out!</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>
+                            Whether you want to collaborate on a project, need a DJ for your event, 
+                            or just want to connect — I'm always happy to hear from you.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:gathandidaniel@gmail.com">gathandidaniel@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:0794174041">0794174041</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">🎵</div>
+                                <div>
+                                    <h4>YouTube</h4>
+                                    <a href="https://youtube.com/@DJDANIE254" target="_blank" rel="noopener">DJ DANIE 254</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Kenya 🇰🇪</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Find Me Online</h3>
+                            <p>I use the same username across platforms: <strong>DJ DANIE 254</strong></p>
+                            <div class="social-badges">
+                                <a href="https://youtube.com/@DJDANIE254" target="_blank" rel="noopener" class="social-badge">YouTube</a>
+                                <a href="#" class="social-badge">Instagram</a>
+                                <a href="#" class="social-badge">TikTok</a>
+                                <a href="#" class="social-badge">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="What should I call you?">
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="So I can get back to you">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Choose a topic...</option>
+                                    <option value="collaboration">Tech Collaboration</option>
+                                    <option value="dj-booking">DJ Booking / Event</option>
+                                    <option value="question">General Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" required rows="5" placeholder="What's on your mind?"></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                        
+                        <!-- Success Message (hidden by default) -->
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent!</h3>
+                            <p>Thanks for reaching out! I'll get back to you as soon as I can.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Explanation Section (Academic Requirement) -->
+        <section class="section section-muted">
+            <div class="container container-narrow">
+                <h2 class="text-center">Websites & Hosting</h2>
+                                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>🌐 Domain Name </h3>
+                        <p>
+                            A domain name is like the address of your website on the internet. 
+                            Instead of remembering complicated IP addresses (like 192.168.1.1), 
+                            people can just type something like "google.com" or "danielgathandi.com" 
+                            into their browser.
+                        </p>
+                        <p>
+                            The domain names are registered through domain registrars, and you 
+                            usually pay a yearly fee to keep them. They make websites accessible 
+                            and easy to remember.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🖥️ Web Hosting</h3>
+                        <p>
+                            Web hosting is the service that stores your website files on a server 
+                            that's connected to the internet. When someone visits your 
+                            domain, the hosting server sends them your website files.
+                        </p>
+                       
+                    </div>
+
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="text-gradient">DJ DANIE 254</h3>
+                    <p>Software Engineering student & DJ based in Kenya. Passionate about tech and music.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="childhood.html">Childhood</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:gathandidaniel@gmail.com">gathandidaniel@gmail.com</a></li>
+                        <li><a href="tel:0794174041">0794174041</a></li>
+                        <li><a href="https://youtube.com/@DJDANIE254" target="_blank" rel="noopener">YouTube: DJ DANIE 254</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Daniel Gathandi. Built with passion in Kenya 🇰🇪</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
